@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_match_parent_20">
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Text_title"
+        android:text="用户注册"/>
+    <EditText
+        android:id="@+id/edit_username"
+        style="@style/edittext_match_40"
+        android:hint="用户名"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces" />
+    <TextView
+        android:id="@+id/txt_warning"
+        style="@style/base_wrap_content"/>
+    <EditText
+        android:id="@+id/edit_password"
+        android:inputType="textPassword"
+        style="@style/edittext_match_40"
+        android:hint="输入密码"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"/>
+    <EditText
+        android:id="@+id/edit_repassword"
+        android:inputType="textPassword"
+        style="@style/edittext_match_40"
+        android:hint="确认密码"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"/>
+    <EditText
+        android:id="@+id/edit_question"
+        style="@style/edittext_match_40"
+        android:hint="请设置密保问题"/>
+    <EditText
+        android:id="@+id/edit_answer"
+        style="@style/edittext_match_40"
+        android:hint="请设置密保答案"/>
+    <Button
+        android:id="@+id/submit"
+        style="@style/button_match_parent_40"
+        android:text="提交"/>
+    <Button
+        android:id="@+id/back"
+        style="@style/button_match_parent_40"
+        android:text="返回"/>
+
+</LinearLayout>

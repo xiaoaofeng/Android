@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--baseStyle样式-->
+    <style name="base_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="base_match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="base_match_parent_40">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="base_match_parent_wrap_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="base_140_40">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="base_80_40">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="base_match_parent_270">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">270dp</item>
+    </style>
+
+    <style name="base_match_parent_center" parent="base_match_parent">
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="base_match_parent_40_center" parent="base_match_parent_40">
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!--边框样式--><!--外边框样式-->
+    <style name="layout_match_parent_20" parent="base_match_parent">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="LinearLayout_item_horizontal" parent="base_wrap_content">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="LinearLayout_item_vertical" parent="base_wrap_content">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="layout_match_parent_50">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--内边框样式-->
+    <style name="ll_match_wrap_h" parent="base_match_parent_wrap_content">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="ll_match_top_h" parent="base_wrap_content">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="ll_match_center_h" parent="base_wrap_content">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="ll_match_wrap_v" parent="base_match_parent_wrap_content">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="ll_match270_center_v" parent="base_match_parent_270">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="ll_match_wrap_center_v" parent="ll_match_wrap_v">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="ll_match_center_v" parent="base_match_parent">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--Text样式-->
+    <style name="Text_title" parent="base_wrap_content">
+        <item name="android:textSize">25dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="Text_title_wel" parent="base_wrap_content">
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="Text_title_warning" parent="base_wrap_content">
+        <item name="android:textSize">9dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">#f00</item>
+    </style>
+    <style name="Text_item">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#00a</item>
+    </style>
+
+    <style name="textview_kingsoft" parent="base_match_parent_wrap_content">
+        <item name="android:textColor">#00a</item>
+        <item name="android:lineSpacingMultiplier">0.9</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="textview_wrap_00a" parent="base_wrap_content">
+        <item name="android:textColor">#00a</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">@drawable/textview</item>
+    </style>
+
+    <!--EditText样式-->
+    <style name="edittext_errorstring" parent="base_match_parent_wrap_content">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:hint">暂无信息</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:minLines">2</item>
+        <item name="android:editable">false</item>
+        <item name="android:maxLines">4</item>
+    </style>
+    <style name="edittext_match_40" parent="base_match_parent_40">
+        <item name="android:ems">10</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="edittext_base">
+        <item name="android:textColorHint">#000</item>
+        <item name="android:ems">10</item>
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="edittext_match_wrap" parent="edittext_base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="edittext_match_wrap_center" parent="edittext_match_wrap">
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="edittext_80_40" parent="edittext_base">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:hint">请输入验证码</item>
+    </style>
+    <style name="edittext_kingsoft">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minLines">2</item>
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:textColor">#00a</item>
+        <item name="android:lineSpacingMultiplier">0.8</item>
+    </style>
+    <style name="edittext_base_heightwrap">
+        <item name="android:ems">10</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/kingsoft_edittext</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="edittext_base_wrap" parent="edittext_base_heightwrap">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!--button样式-->
+    <style name="button_wrap_content" parent="base_wrap_content">
+        <item name="android:background">@drawable/gov_button</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#00a</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+    </style>
+    <style name="button_match_parent" parent="base_match_parent_40_center">
+        <item name="android:background">@drawable/gov_button</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#00a</item>
+    </style>
+    <style name="button_item">
+        <item name="android:layout_height">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/coursegov_btn</item>
+        <item name="android:textColor">#0000aa</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+    <style name="button_nowidth">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:background">@drawable/coursegov_btn</item>
+        <item name="android:textColor">#0000aa</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="button_match_parent_40" parent="base_match_parent_40_center">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!--view样式-->
+    <style name="view_vertical_item">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#66CCFF</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="view_horizontal_top" parent="view_vertical_item">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="view_horizontal_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">#0000AA</item>
+    </style>
+
+    <!--图片样式    验证码图片-->
+    <style name="imageview_captchcode">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+
+    <!--主界面图片-->
+    <style name="imageview_login">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <!--其他图片-->
+    <style name="imageview_1">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="imageview_2">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <!--其他样式-->
+    <style name="checkbox" parent="base_wrap_content">
+        <item name="android:button">@drawable/checkbox</item>
+        <item name="android:textColor">#00a</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="checkbox_styles" parent="checkbox">
+        <item name="android:visibility">gone</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:text">""</item>
+    </style>
+    <style name="spinner">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">#E0FFFF</item>
+        <item name="android:ems">10</item>
+    </style>
+    <style name="listview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">180dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:divider">@drawable/list_item_divider</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:background">@drawable/coursegov_btn</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">#00a</item>
+    </style>
+
+    <style name="radiogroup_horizontal" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="radiogroup_vertical">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="radiobutton" parent="base_match_parent">
+        <item name="android:clickable">true</item>
+        <item name="android:button">@drawable/radiobutton</item>
+        <item name="android:textColor">#00a</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+    <style name="seekbar" parent="base_match_parent">
+        <item name="android:max">100</item>
+        <item name="android:progress">50</item>
+        <item name="android:textColor">#00a</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="ll_wrap_top_h" parent="base_wrap_content">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+</resources>
